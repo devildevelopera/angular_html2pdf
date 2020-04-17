@@ -1,0 +1,135 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewRecipe()">New Recipe</button>
+    <button class="btn btn-success" (click)="download()">downlpad</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item
+      *ngFor="let recipeEl of recipes; let i = index"
+      [recipe]="recipeEl"
+      [index]="i"></app-recipe-item>
+  </div>
+</div>
+
+
+<div  #element>
+  <html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF</title>
+  </head>
+  <body class="p-5">
+
+  <header>
+    <div class="d-flex justify-content-center align-items-center">
+      <img class="ml-5" src="../HTML/img/Ministy logo.svg" alt="">
+      <h1>العرض المالي و الفني</h1>
+    </div>
+  </header>
+
+  <div class="maincontainer my-5 p-4 bg-white">
+    <div class="details-head bg-light border p-5 rounded">
+      <div class="d-flex justify-content-between">
+        <img class="ml-5 icon icon-1" src="../HTML/img/icon1.svg" alt="">
+        <div>
+          <label>نوع اللعبة</label>
+          <p> لعبة - لعبة</p>
+        </div>
+        <div>
+          <label>اسم لعبة </label>
+          <p> لعبة التجارية </p>
+        </div>
+        <div>
+          <label>الدائرة لعبة</label>
+          <p> الخامسة عشر </p>
+        </div>
+        <div>
+          <label>رقم لعبة</label>
+          <p> 189745 </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content bg-light border p-4 rounded my-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>العرض الفني</h1>
+        <img class="ml-5 icon icon-2" src="../HTML/img/icon2.svg" alt="">
+      </div>
+      <hr class="my-4">
+      <div class="details my-5">
+        <h4>ملخص لعبة</h4>
+        <p class="mt-3">بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ تقسيم الأراضي العربية في العراق والشام ما بين نفوذ بريطاني وآخر فرنسي ومناطق أخرى تحت إشراف دولي، وبرز ما يُسمّى بوعد بلفور وزير خارجية بريطانيا عام 1917م وفيه أعلن المساعدة على إقامة وطن قومي لليهود على أرض فلسطين، وفي هذه الفترة شهدت فلسطين سيطرة سياسية وعسكرية بريطانية بالإضافة إلى حركة صهيونية استيطانية حيث زادت عمليات الاستيطان اليهودية على أرض فلسطين كما ازداد الضغط من الانتداب البريطاني والحركة الصهيونية مما أدّى إلى حدوث مواجهات مع الفلسطينيين، استغلت الصهيونية تقسيم الوطن العربي إلى دويلات نفوذ وتسلَّحت بوعد بلفور فدأبت إلى تنفيذ مخططها بإقامة كيانها على أرض فلسطين العربية ومن أجل ذلك ارتكب المهاجرون اليهود الجرائم في حق أهل فلسطين واستغلوا جميع الطرق للسيطرة على الأرض فحاولوا بالخداع والإغراء وكذلك بالإرهاب والتهجير فما كان من الفلسطينيين بعد أن لجؤوا إلى القانون إلى محاولة استرجاع أراضيهم بالقوة فقاموا بشنِّ هجمات مسلحة ومتكررة على المستوطنات بهدف إرغامهم على العودة، ازدادت الهجمات الفلسطينية المسلَّحة إلى أن قامت انتفاضة في معظم أرجاء فلسطين وذلك في عام 1929.[٢]</p>
+      </div>
+
+      <div class="details my-5">
+        <h4>طبيعة ونطاق العمل </h4>
+        <p class="mt-3">بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ تقسيم الأراضي العربية في العراق والشام ما بين نفوذ بريطاني وآخر فرنسي </p>
+      </div>
+
+      <div class="details my-5">
+        <h4>واجبات ومسؤوليات لعبة</h4>
+        <ul class="mt-3 pr-4">
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ تقسيم الأراضي العربية</li>
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ </li>
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية</li>
+        </ul>
+      </div>
+
+      <div class="details my-5">
+        <h4>واجبات ومسئوليات أطراف لعبة ( لعبة - لعبة لعبة )</h4>
+        <ul class="mt-3 pr-4">
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ تقسيم الأراضي العربية</li>
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية تمَّ </li>
+          <li>بعد إعلان استقلال الوطن العربي عن الدولة العثمانية</li>
+        </ul>
+      </div>
+
+      <div class="time bg-white rounded border mt-5 p-4"  id="whole-element">
+        <div class="d-flex align-items-center">
+          <img class="ml-5 icon icon-3" src="../HTML/img/icon3.svg" alt="">
+          <p class="ml-4 m-0">الوقت المقدر لاتمام لعبة</p>
+          <span>شهرين</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content bg-light border p-4 rounded">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>العرض المالى</h1>
+        <img class="ml-5 icon icon-2" src="../HTML/img/icon4.svg" alt="">
+      </div>
+      <hr class="my-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <label> اتعاب لعبة </label>
+          <p>120.000 ريال</p>
+        </div>
+        <div>
+          <label> رسوم لعبة </label>
+          <p> 300 ريال </p>
+        </div>
+        <div class="total border rounded bg-white p-3 text-center">
+          <label> المجموع </label>
+          <p>  </p>
+        </div>
+        <div>
+          <label>الدفعة لعبة</label>
+          <p> 50.000 ريال </p>
+        </div>
+        <div>
+          <label> الدفعة الثانية </label>
+          <p> 50.000 ريال </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
+</div>
+
